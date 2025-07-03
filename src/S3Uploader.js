@@ -50,7 +50,7 @@ const S3Uploader = () => {
       console.error('Erro ao carregar objetos:', error);
     }
   };
-
+//
   return (
     <div>
       <Form.Group controlId="bucketSelect">
