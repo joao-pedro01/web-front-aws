@@ -15,7 +15,7 @@ function App() {
     async function fetchData() {
       try {
         const userResponse = await axios.get('http://44.201.171.2:3000/usuarios');
-        const productResponse = await axios.get('http://44.201.171.2:3000/produtos');
+        const productResponse = await axios.get('http://3011392323036-dsm.duckdns.org/produtos');
         setUsers(userResponse.data);
         setProducts(productResponse.data);
       } catch (error) {
