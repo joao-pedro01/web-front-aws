@@ -14,9 +14,9 @@ function App() {
     // Fetch users and products from backend
     async function fetchData() {
       try {
-        const userResponse = await axios.get('http://44.201.171.2:3000/usuarios');
+        //const userResponse = await axios.get('http://44.201.171.2:3000/usuarios');
         const productResponse = await axios.get('http://3011392323036-dsm.duckdns.org/produtos');
-        setUsers(userResponse.data);
+        setUsers([]);
         setProducts(productResponse.data);
       } catch (error) {
         console.error('Erro ao buscar dados:', error);
