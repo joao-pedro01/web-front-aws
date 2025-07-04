@@ -11,7 +11,7 @@ const S3Uploader = () => {
   useEffect(() => {
     async function fetchBuckets() {
       try {
-        const response = await axios.get('http://34.201.52.30:3000//buckets');
+        const response = await axios.get('http://34.201.52.30:3000/buckets');
         setBuckets(response.data);
       } catch (error) {
         console.error('Erro ao carregar buckets:', error);
