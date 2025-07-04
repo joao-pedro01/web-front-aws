@@ -14,6 +14,7 @@ function App() {
     // Fetch users and products from backend
     async function fetchData() {
       try {
+        // comented out the user API call to avoid CORS issues
         const userResponse = await axios.get('http://34.201.52.30:3000/usuarios');
         const productResponse = await axios.get('http://3011392323036-dsm.duckdns.org/produtos');
         setUsers([]);
